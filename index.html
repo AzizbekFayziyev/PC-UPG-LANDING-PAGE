@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PC UPG</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="./scss/style.css">
+     <!-- FONTS AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+     <!-- HEADER -->
+     <header class="header">
+          <!-- NAVBAR -->
+          <nav class="navbar">
+               <img src="./assets/images/logo.svg" alt="Logo" class="navbar__brand">
+
+               <ul>
+                    <li class="navbar__item"><a class="navbar__link" href="#">Главная</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#about">О нас</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#courses">Курсы</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#map">Расписание</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#teachers">Преподаватели</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#footer">Рассылка</a></li>
+               </ul>
+
+               <button class="navbar__btn">Зайти в кабинет</button>
+
+               <div class="mobmenu">
+                    <i id="menu" class="fas fa-regular fa-bars fa-beat-fade"></i>
+                    <div class="mobmenu__bg"></div>
+               </div>
+          </nav>
+          <!-- NAVBAR-END -->
+
+          <div class="header__main container">
+               <h1 data-aos="fade-up" data-aos-duration="1200" class="header__main_title">
+                    Первый курс <br>
+                    по компьютерной сборке
+               </h1>
+               <div data-aos="fade-right" data-aos-duration="1200" class="header__main_timer timer">
+                    <div>
+                         <h5 id="days">00</h5>
+                         <span>Дней</span>
+                    </div>
+
+                    <div>
+                         <h5 id="hours">00</h5>
+                         <span>Часов</span>
+                    </div>
+
+                    <div>
+                         <h5 id="minutes">00</h5>
+                         <span>Минут</span>
+                    </div>
+
+                    <div>
+                         <h5 id="seconds">00</h5>
+                         <span>Секунд</span>
+                    </div>
+               </div>
+          </div>
+
+          <div class="header__sub" data-aos="fade-up" data-aos-duration="1000">
+               <div class="container">
+                    <button class="header__sub_btn">Заказать курс</button>
+                    <div class="header__sub_info">
+                         <h5>Учеников всего: <span>200</span></h5>
+                         <h5>Успешно закончили курс: <span>190</span></h5>
+                    </div>
+                    <div class="header__sub_progress">
+                         <h5>Заработано учениками: <span>400 000₽</span></h5>
+                         <div class="bar">
+                              <div class="main"><span></span></div>
+                              <div class="bar__info">
+                                   <span>0</span>
+                                   <span>1 000 000₽</span>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!-- HEADER-END -->
+
+     <!-- ABOUT-SECTION -->
+     <section id="about" class="about container">
+          <div class="about__img">
+               <img data-aos="fade-right" data-aos-duration="800" src="./assets/images/about.png" alt="PC">
+          </div>
+          <div class="about__info">
+               <h1 class="title" data-aos="fade-up" data-aos-duration="800">Чем мы занимаемся?</h1>
+               <p data-aos="fade-up" data-aos-duration="1200">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Eget neque, dignissim et feugiat elit augue
+                    in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi. Et
+                    neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet
+                    fringilla. Nunc sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus
+                    risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi,
+                    lobortis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam quasi voluptas
+                    facilis corporis rerum, ad magni numquam quibusdam aliquam expedita saepe earum unde autem vel alias
+                    dolor assumenda tempore.</p>
+          </div>
+     </section>
+     <!-- ABOUT-SECTION-END -->
+
+     <!-- MAP-SECTION-START -->
+     <section id="map" class="map container">
+          <h1 class="title" class="title" data-aos="fade-up" data-aos-duration="800">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                         d="M84.9901 42.0097C72.9254 29.945 53.3647 29.945 41.3 42.0097L31.2177 31.9273C48.8507 14.2944 77.4394 14.2944 95.0724 31.9273C112.705 49.5603 112.705 78.149 95.0724 95.782L84.9901 85.6997C97.0547 73.635 97.0547 54.0743 84.9901 42.0097Z"
+                         fill="url(#paint0_linear_10091_102)" />
+                    <defs>
+                         <linearGradient id="paint0_linear_10091_102" x1="70.8907" y1="7.74569" x2="117.15" y2="72.5852"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#DF5950" />
+                              <stop offset="1" stop-color="#451046" />
+                         </linearGradient>
+                    </defs>
+               </svg>
+               Быстрый старт
+          </h1>
+
+          <p class="map__subtitle" data-aos="fade-up" data-aos-duration="1000">Больше 90% учеников прошли полный курс и
+               смогли собрать свой первый компьютер</p>
+
+          <div class="map__progress" data-aos="fade-in" data-aos-duration="1200">
+               <div class="map__progress_item">
+                    <h5>100%</h5>
+                    <div class="item1"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                         tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+               </div>
+
+               <div class="map__progress_item">
+                    <h5>75%</h5>
+                    <div class="item2"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                         tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+               </div>
+
+               <div class="map__progress_item">
+                    <h5>50%</h5>
+                    <div class="item3"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                         tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+               </div>
+
+               <div class="map__progress_item">
+                    <h5>Итог</h5>
+                    <div class="item4"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet
+                         tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+               </div>
+          </div>
+     </section>
+     <!-- MAP-SECTION-END -->
+
+     <!-- COURSES-SECTION-START -->
+     <section id="courses" class="courses container">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="800">Получите профессию прямо сейчас</h1>
+
+          <div class="courses__cards"></div>
+     </section>
+     <!-- COURSES-SECTION-END -->
+
+     <!-- BRENDS-SECTION-START -->
+     <section class="brends container">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="800">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 127" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                         d="M41.7854 85.2144C53.8501 97.2791 73.1935 97.4964 84.99 85.6998L95.0724 95.7822C77.8312 113.023 49.5601 112.706 31.9271 95.0727C14.2941 77.4397 13.9765 49.1686 31.2176 31.9275L41.3 42.0098C29.5034 53.8064 29.7207 73.1497 41.7854 85.2144Z"
+                         fill="url(#paint0_linear_10099_13)" />
+                    <defs>
+                         <linearGradient id="paint0_linear_10099_13" x1="56.1088" y1="119.254" x2="10.1177" y2="54.2849"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#DF5950" />
+                              <stop offset="1" stop-color="#451046" />
+                         </linearGradient>
+                    </defs>
+               </svg>
+               Партнеры - топовые бренды
+          </h1>
+
+          <marquee direction="right" behivor="scroll" scrollamount="15">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+               <img src="assets/images/brend.png" alt="MSI">
+          </marquee>
+     </section>
+     <!-- BRENDS-SECTION-END -->
+
+     <!-- TEACHERS-SECION-START -->
+     <section id="teachers" class="teachers container">
+          <h1 class="title" data-aos="fade-up" data-aos-duration="800">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                         d="M90.1972 59.3399C73.1211 59.3399 59.2781 72.8752 59.2781 89.5719L45.0077 89.5719C45.0078 65.1691 65.2398 45.3867 90.1972 45.3866C115.155 45.3866 135.387 65.1689 135.387 89.5718L121.116 89.5718C121.116 72.8751 107.273 59.3398 90.1972 59.3399Z"
+                         fill="url(#paint0_linear_10099_80)" />
+                    <defs>
+                         <linearGradient id="paint0_linear_10099_80" x1="55.9709" y1="45.3867" x2="134.497" y2="58.8176"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#DF5950" />
+                              <stop offset="1" stop-color="#451046" />
+                         </linearGradient>
+                    </defs>
+               </svg> Ваши преподаватели
+          </h1>
+
+          <div class="teachers__cards">
+               <div class="teachers__cards_card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/images/teacher1.png" alt="teacher">
+                    <h4>Дмитрий Иванов</h4>
+                    <p>Специалист по видеокартам</p>
+                    <button>Биография</button>
+               </div>
+               <div class="teachers__cards_card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/images/teacher2.png" alt="teacher" data-aos="zoom-in" data-aos-duration="1000">
+                    <h4>Дмитрий Иванов</h4>
+                    <p>Специалист по видеокартам</p>
+                    <button>Биография</button>
+               </div>
+               <div class="teachers__cards_card" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./assets/images/teacher3.png" alt="teacher">
+                    <h4>Дмитрий Иванов</h4>
+                    <p>Специалист по видеокартам</p>
+                    <button>Биография</button>
+               </div>
+          </div>
+     </section>
+     <!-- TECHERS-SECTION-END -->
+
+     <!-- FOOTER-START -->
+     <footer id="footer" class="container">
+          <div class="title" data-aos="fade-up" data-aos-duration="800">Статьи каждую неделю</div>
+          <p data-aos="fade-up" data-aos-duration="1000">Больше 90% учеников прошли полный курс и смогли собрать свой
+               первый компьютер</p>
+          <form>
+               <input required type="email" placeholder="E-mail">
+               <button>Подписаться</button>
+          </form>
+          <div class="social">
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-youtube"></i>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-instagram"></i>
+          </div>
+          <h5>WEB SITE CREATED BY @AVANCODER</h5>
+     </footer>
+     <!-- FOOTER-END -->
+
+     <!-- AOS LIBARY -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- JAVSCRIPT -->
+     <script src="./js/index.js"></script>
+</body>
+
+</html>
